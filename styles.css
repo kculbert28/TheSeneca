@@ -329,7 +329,7 @@ img { max-width: 100%; display: block; }
 }
 .home-hero {
   background:
-    linear-gradient(90deg, rgba(27, 7, 58, .90) 0%, rgba(53, 18, 107, .72) 48%, rgba(53, 18, 107, .30) 100%),
+    linear-gradient(90deg, rgba(27, 7, 58, .89) 0%, rgba(53, 18, 107, .72) 90%),
     radial-gradient(circle at 18% 22%, rgba(201, 162, 78, .36), transparent 26%),
     url('SenecaBackdrop.png') center/cover no-repeat;
 }
