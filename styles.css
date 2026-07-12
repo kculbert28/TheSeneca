@@ -766,8 +766,13 @@ body {
   background:
     radial-gradient(circle at top right, rgba(240,216,143,.22), transparent 34%),
     radial-gradient(circle at bottom left, rgba(111,67,163,.42), transparent 30%),
-    linear-gradient(135deg, var(--night), var(--purple-dark) 58%, var(--purple)),
-    url('SenecaBackdrop.png') center/cover no-repeat;
+    linear-gradient(
+      135deg,
+      rgba(18, 8, 42, .82),
+      rgba(39, 14, 77, .72) 58%,
+      rgba(73, 36, 130, .60)
+    ),
+    url("SenecaBackdrop.png") center/cover no-repeat;
 }
 
 .login-card {
