@@ -519,3 +519,296 @@ img { max-width: 100%; display: block; }
     flex-direction: column;
   }
 }
+
+/* ==========================================================
+   Royal Evening Theme Update
+   Deep purple foundation with balanced light sections.
+   Added July 2026.
+   ========================================================== */
+:root {
+  --purple: #35126b;
+  --purple-dark: #16052f;
+  --purple-mid: #4e2088;
+  --purple-soft: #6f43a3;
+  --night: #120327;
+  --lavender: #efe7f8;
+  --lavender-soft: #f7f2fb;
+  --cream: #fbf4e8;
+  --cream-deep: #f0ddba;
+  --gold: #c9a24e;
+  --gold-soft: #f0d88f;
+  --ink: #21172b;
+  --muted: #d9d0e7;
+  --white: #ffffff;
+  --line: rgba(240, 216, 143, 0.28);
+  --shadow: 0 28px 80px rgba(7, 1, 18, 0.28);
+}
+
+body {
+  color: rgba(255,255,255,.92);
+  background:
+    radial-gradient(circle at 12% 0%, rgba(201,162,78,.18), transparent 30%),
+    linear-gradient(180deg, var(--night) 0%, var(--purple-dark) 42%, var(--purple) 100%);
+}
+
+.site-header {
+  background: rgba(18, 3, 39, 0.88);
+  border-bottom: 1px solid rgba(240, 216, 143, 0.28);
+  box-shadow: 0 10px 36px rgba(0,0,0,.22);
+}
+
+.brand,
+.main-nav {
+  color: var(--white);
+}
+
+.brand-mark {
+  background: var(--cream);
+  border-color: var(--gold-soft);
+  box-shadow: 0 10px 24px rgba(0,0,0,.22);
+}
+
+.brand-name {
+  color: var(--white);
+}
+
+.main-nav a:hover {
+  color: var(--gold-soft);
+  border-color: var(--gold-soft);
+}
+
+.main-nav .home-link {
+  color: var(--purple-dark);
+  background: var(--cream);
+  border-color: rgba(240,216,143,.75);
+}
+
+.main-nav .home-link:hover {
+  color: var(--purple-dark);
+  background: var(--gold-soft);
+}
+
+.hero,
+.page-hero {
+  background:
+    radial-gradient(circle at top right, rgba(240,216,143,.30), transparent 34%),
+    radial-gradient(circle at 12% 22%, rgba(111,67,163,.58), transparent 32%),
+    linear-gradient(135deg, var(--night), var(--purple-dark) 48%, var(--purple));
+  color: var(--white);
+}
+
+.home-hero {
+  background:
+    linear-gradient(90deg, rgba(18, 3, 39, .94) 0%, rgba(43, 20, 95, .82) 60%, rgba(53, 18, 107, .58) 100%),
+    radial-gradient(circle at 18% 22%, rgba(201, 162, 78, .32), transparent 26%),
+    url('SenecaBackdrop.png') center/cover no-repeat;
+}
+
+.home-hero::after {
+  background: linear-gradient(180deg, transparent, rgba(18, 3, 39, .98));
+}
+
+.hero h1,
+.page-hero h1 {
+  color: var(--white);
+  text-shadow: 0 18px 50px rgba(0,0,0,.34);
+}
+
+.hero p,
+.page-hero p {
+  color: rgba(255,255,255,.90);
+}
+
+.eyebrow,
+.hero-eyebrow {
+  color: var(--gold-soft);
+}
+
+.section {
+  background:
+    radial-gradient(circle at top left, rgba(240,216,143,.08), transparent 28%),
+    linear-gradient(135deg, #1b073a, #2b145f);
+  color: var(--white);
+}
+
+.section.alt {
+  background:
+    radial-gradient(circle at top right, rgba(201,162,78,.16), transparent 30%),
+    linear-gradient(135deg, var(--lavender-soft), var(--cream));
+  color: var(--ink);
+}
+
+.section h2 {
+  color: var(--white);
+}
+
+.section p {
+  color: rgba(255,255,255,.80);
+}
+
+.section.alt h2,
+.section.alt .statement {
+  color: var(--purple-dark);
+}
+
+.section.alt p {
+  color: #62576d;
+}
+
+.section.alt .eyebrow {
+  color: var(--purple-mid);
+}
+
+.card,
+.alt .card {
+  background: rgba(255,255,255,.94);
+  border: 1px solid rgba(240,216,143,.36);
+  border-top: 3px solid var(--gold);
+  box-shadow: 0 18px 48px rgba(7, 1, 18, 0.18);
+}
+
+.card h3,
+.alt .card h3 {
+  color: var(--purple);
+}
+
+.card p,
+.alt .card p {
+  color: #62576d;
+}
+
+.statement {
+  color: var(--white);
+}
+
+.image-frame {
+  background: rgba(255,255,255,.08);
+  border-color: rgba(240,216,143,.34);
+  box-shadow: var(--shadow);
+}
+
+.image-frame.light {
+  background: rgba(255,255,255,.12);
+  border-color: rgba(240,216,143,.28);
+}
+
+.section.alt .image-frame.light,
+.section.alt .photo-card,
+.section.alt .photo-placeholder {
+  background: var(--lavender);
+  border-color: rgba(53,18,107,.16);
+}
+
+.btn {
+  box-shadow: 0 14px 32px rgba(0,0,0,.20);
+}
+
+.btn:hover {
+  box-shadow: 0 20px 42px rgba(0,0,0,.28);
+}
+
+.btn-primary,
+.btn-dark {
+  background: var(--cream);
+  color: var(--purple-dark);
+  border-color: rgba(240,216,143,.75);
+}
+
+.btn-primary:hover,
+.btn-dark:hover {
+  background: var(--gold-soft);
+}
+
+.btn-secondary,
+.btn-outline {
+  color: var(--white);
+  border-color: rgba(240,216,143,.72);
+  background: rgba(255,255,255,.08);
+}
+
+.btn-secondary:hover,
+.btn-outline:hover {
+  background: rgba(255,255,255,.14);
+}
+
+.section.alt .btn-outline {
+  color: var(--purple-dark);
+  background: rgba(255,255,255,.62);
+  border-color: var(--gold);
+}
+
+.section.alt .btn-dark {
+  background: var(--purple-dark);
+  color: var(--white);
+  border-color: var(--gold);
+}
+
+.section.alt .btn-dark:hover {
+  background: var(--purple);
+}
+
+.photo-placeholder {
+  background:
+    linear-gradient(135deg, rgba(255,255,255,.90), rgba(247,241,251,.96)),
+    radial-gradient(circle at top right, rgba(236,215,154,.35), transparent 32%);
+}
+
+.photo-placeholder h3 {
+  color: var(--purple);
+}
+
+.photo-placeholder p,
+.photo-note {
+  color: #62576d;
+}
+
+.login-section {
+  background:
+    radial-gradient(circle at top right, rgba(240,216,143,.22), transparent 34%),
+    radial-gradient(circle at bottom left, rgba(111,67,163,.42), transparent 30%),
+    linear-gradient(135deg, var(--night), var(--purple-dark) 58%, var(--purple));
+}
+
+.login-card {
+  background: rgba(255,255,255,.95);
+  border-color: rgba(240,216,143,.55);
+  border-top-color: var(--gold-soft);
+  box-shadow: 0 30px 90px rgba(0,0,0,.32);
+}
+
+.login-card h1 {
+  color: var(--purple-dark);
+}
+
+.login-intro,
+.login-note,
+.login-options {
+  color: #62576d;
+}
+
+.login-form label {
+  color: var(--purple-dark);
+}
+
+.login-form input[type="email"],
+.login-form input[type="password"] {
+  background: var(--lavender-soft);
+  border-color: rgba(53, 18, 107, .18);
+  color: var(--ink);
+}
+
+.login-form input:focus {
+  background: var(--white);
+  border-color: var(--gold);
+  box-shadow: 0 0 0 4px rgba(201, 162, 78, .18);
+}
+
+.login-options a,
+.login-note a {
+  color: var(--purple);
+}
+
+.site-footer {
+  background: linear-gradient(135deg, #100222, #26094f);
+  border-top-color: var(--gold-soft);
+}
