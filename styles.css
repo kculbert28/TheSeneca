@@ -401,3 +401,121 @@ img { max-width: 100%; display: block; }
   .photo-card { min-height: 300px; }
   .main-nav .home-link { padding: 8px 12px; }
 }
+
+/* Login Page */
+
+.login-section {
+  min-height: 760px;
+  padding: 100px 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background:
+    radial-gradient(circle at top right, rgba(236, 215, 154, .36), transparent 34%),
+    linear-gradient(135deg, var(--lavender-soft), var(--cream));
+}
+
+.login-card {
+  width: 100%;
+  max-width: 520px;
+  background: rgba(255, 255, 255, .9);
+  border: 1px solid var(--line);
+  border-top: 5px solid var(--gold);
+  border-radius: 34px;
+  padding: 44px;
+  box-shadow: var(--shadow);
+}
+
+.login-card h1 {
+  font-size: clamp(2.4rem, 5vw, 4rem);
+  line-height: .95;
+  letter-spacing: -0.05em;
+  color: var(--purple-dark);
+  margin: 0 0 18px;
+}
+
+.login-intro {
+  color: var(--muted);
+  font-size: 1.05rem;
+  margin: 0 0 30px;
+}
+
+.login-form {
+  display: grid;
+  gap: 14px;
+}
+
+.login-form label {
+  font-family: Arial, sans-serif;
+  font-size: .82rem;
+  font-weight: 700;
+  letter-spacing: .05em;
+  color: var(--purple-dark);
+}
+
+.login-form input[type="email"],
+.login-form input[type="password"] {
+  width: 100%;
+  min-height: 50px;
+  padding: 13px 16px;
+  border-radius: 999px;
+  border: 1px solid rgba(53, 18, 107, .18);
+  background: var(--lavender-soft);
+  color: var(--ink);
+  font-family: Arial, sans-serif;
+  font-size: .95rem;
+  outline: none;
+}
+
+.login-form input:focus {
+  border-color: var(--gold);
+  box-shadow: 0 0 0 4px rgba(201, 162, 78, .16);
+  background: var(--white);
+}
+
+.login-options {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  align-items: center;
+  margin: 6px 0 12px;
+  font-family: Arial, sans-serif;
+  font-size: .84rem;
+  color: var(--muted);
+}
+
+.login-options a,
+.login-note a {
+  color: var(--purple);
+  font-weight: 700;
+}
+
+.remember-me {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  letter-spacing: 0;
+}
+
+.login-btn {
+  width: 100%;
+  cursor: pointer;
+}
+
+.login-note {
+  margin: 26px 0 0;
+  color: var(--muted);
+  font-size: .95rem;
+  text-align: center;
+}
+
+@media (max-width: 600px) {
+  .login-card {
+    padding: 32px 24px;
+  }
+
+  .login-options {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+}
