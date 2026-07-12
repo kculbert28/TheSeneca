@@ -764,13 +764,14 @@ body {
 
 .login-section {
   background:
-    radial-gradient(circle at top right, rgba(240,216,143,.22), transparent 34%),
-    radial-gradient(circle at bottom left, rgba(111,67,163,.42), transparent 30%),
+    radial-gradient(circle at top right,
+      rgba(201,162,78,.12),
+      transparent 32%),
     linear-gradient(
-      135deg,
-      rgba(18, 8, 42, .82),
-      rgba(39, 14, 77, .72) 58%,
-      rgba(73, 36, 130, .60)
+      90deg,
+      rgba(12,5,30,.94) 0%,
+      rgba(27,7,58,.90) 45%,
+      rgba(53,18,107,.82) 100%
     ),
     url("SenecaBackdrop.png") center/cover no-repeat;
 }
